@@ -87,7 +87,10 @@ uploaded = files.upload()
 
 ## 👥 Team Details
 **Name:** Shreya Talod  
-**Roll No:** (Add your roll number here)
+**Roll No:** SE22UARI171
+**Name:** Gouri Mabdhani  
+**Roll No:** SE22UARI215
+
 
 
 
