@@ -6,13 +6,14 @@ This project focuses on detecting **real vs fake iris images** using a deep lear
 
 This README explains:
 - Folder structure
-- How to run training, testing, and inference
+- How to run preprocessing, training, testing, and inference
 - Requirements
 - Input files needed
 - Model execution workflow
 - Team details placeholder
 
 
+---
 
 ## Environment Requirements
 Install the following in Google Colab / local environment:
@@ -23,8 +24,17 @@ pip install torch torchvision opencv-python numpy tqdm
 
 ---
 
-## How to Run the Project
+##  How to Run the Project
 
+### **Preprocessing (Already Done)**
+Preprocessing converts:
+- grayscale → 3‑channel RGB  
+- resizes every image → **224×224**  
+
+This step is already performed, stored in:
+```
+dataset_preprocessed/
+```
 
 ### **Train the Model**
 Run:
@@ -40,7 +50,7 @@ This will:
 efficientnet_b0_best.pth
 ```
 
-### Test the Model
+### **Test the Model**
 Run:
 ```bash
 python test.py
@@ -58,7 +68,7 @@ Test Accuracy: 99.97%
 
 ---
 
-##  Inference (Single Image Prediction)
+## Inference (Single Image Prediction)
 
 Run:
 ```bash
@@ -78,18 +88,31 @@ uploaded = files.upload()
 
 ---
 
+## Necessary Input Files
+Your project requires the following files to run:
 
+- `dataset_split/` folder  
+- `efficientnet_b0_best.pth`  
+- `train.py`, `test.py`, `inference.py`  
+- Python environment with PyTorch  
+
+---
+
+## 
 - The model can be tested immediately using `test.py`.
 - Inference script works with **any iris image**, not only dataset images.
 - All required files are included in the ZIP submission.
 
 ---
 
-## 👥 Team Details
-**Name:** Shreya Talod  
-**Roll No:** SE22UARI171
-**Name:** Gouri Mabdhani  
-**Roll No:** SE22UARI215
+## Team Details
+Name: Gouri Mandhani  
+Roll No: SE22UARI215
+
+Name: Shreya Talod  
+Roll No: SE22UARI171
+
+---
 
 
 
